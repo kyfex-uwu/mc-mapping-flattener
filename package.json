@@ -1,0 +1,15 @@
+{
+  "name": "mc-mapping-flattener",
+  "version": "0.0.0",
+  "description": "unflattens fabricmc's yarn mappings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kyfex_uwu",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^9.3.4",
+    "progress": "^2.0.3"
+  }
+}
