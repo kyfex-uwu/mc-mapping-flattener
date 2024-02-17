@@ -239,7 +239,7 @@ glob.glob('./mappings/**/*.mapping')
 		let methodsSorted=[];
 		for(const method of methods.filter(method=>method.obfName.startsWith("method"))){
 			methodsSorted[intSuffix(method.obfName)]=`${method.obfName} ${method.deobfName} ${method.type.deobfuscated} ${
-					(method.args||[]).map(arg=>arg.name+":"+arg.type.deobfuscated+" ").join("")
+					(method.args||[]).map(arg=>arg.name+":"+arg.type.deobfuscated+" ").join("").slice(0,-1)
 				}`;
 		}
 
